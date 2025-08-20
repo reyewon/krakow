@@ -18,19 +18,20 @@ jobs:
           node-version: 20
           cache: npm
 
+      # Install deps
       - run: npm install
 
-      # Build ONLY the frontend with Vite, output to client-dist
+      # Build ONLY the frontend with Vite to avoid overwriting by server build
       - name: Build frontend
         run: npx vite build --outDir client-dist
 
-      # Publish the static build into docs/
+      # Publish static build into docs/ (root must contain index.html)
       - name: Publish to docs
         run: |
           rm -rf docs
           mkdir -p docs
           cp -r client-dist/* docs/
-          # help SPAs work on refresh
+          # SPA-friendly refreshes on GitHub Pages
           cp docs/index.html docs/404.html || true
           touch docs/.nojekyll
 
