@@ -10,7 +10,7 @@ This is a cleaned export of your Replit project prepared for GitHub.
 ```bash
 npm install
 cp .env.example .env  # fill in values
-```
+``
 
 ## Scripts
 - `dev` → `NODE_ENV=development tsx server/index.ts`
