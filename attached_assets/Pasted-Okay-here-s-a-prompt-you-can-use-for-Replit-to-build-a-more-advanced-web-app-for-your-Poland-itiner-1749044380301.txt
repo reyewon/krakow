@@ -1,0 +1,171 @@
+Okay, here's a prompt you can use for Replit to build a more advanced web app for your Poland itinerary. I've tried to include the key details and styling preferences we've discussed, along with the new features you're interested in.
+
+Replit Prompt:
+Objective: Create a modern, mobile-first, single-page web application to display a 7-day travel itinerary for a trip to Poland (Kraków and Wrocław). The application should be visually appealing, easy to navigate, and include interactive features to enhance usability.
+
+Core Content (to be populated from the provided itinerary text - see attached/below):
+
+Trip Title: Ryan in Poland
+Dates: September 9th - 15th, 2025
+Daily Breakdown (7 Days): Each day should include:
+Day number and descriptive subheading.
+Date.
+A chronological list of activities, flight details, transport information, meal suggestions (restaurants/cafes with reasons why they fit, ambiance, recommended dishes, prices, opening hours if available), and optional activities.
+Links for all named venues (restaurants, attractions, stations) should point to their Google Search result (e.g., "https://www.google.com/search?q=VENUE+NAME+CITY").
+Placeholders or (ideally) dynamically fetched Creative Commons images relevant to the locations/activities mentioned in each day's section.
+Sidebar/Information Section:
+Weather information for September in Kraków & Wrocław.
+Packing essentials.
+General notes (accommodation details with links, train booking reminders).
+Key Styling Cues (to be replicated from the provided CSS or visual example):
+
+Fonts:
+Body: 'Merriweather', serif
+Main Titles (Site Title, "Day X"): 'Playfair Display', serif
+Sub-headers, Metadata, Navigation: 'Lato', sans-serif
+Colours:
+Default Text: #333
+Background: #ffffff
+Hyperlinks (default state): #A0522D (Sienna)
+Hyperlinks (hover state): #8B4513 (Darker Saddle Brown) with underline.
+Navigation Links (header): #555 (subdued grey), hover #000. Active day link background #f0f0f0.
+Accent for "Option Boxes": Border left #A0522D, background #fdfbf7.
+Layout:
+Main content area with a sidebar for "Preparation & Key Info" on larger screens (md:grid md:grid-cols-3). Stacked on mobile.
+Use of dividers (hr.section-divider, hr.subsection-divider).
+"Suggestion Box" styling for restaurants/bars (light grey background, border).
+"Tip Box" styling for sidebar information.
+Icons: Use emojis 🍽️ for Dinner and 🍸 for Cocktails/Drinks next to relevant items in suggestion box headers.
+Functionality Requirements:
+
+Mobile-First Responsive Design: Must look and work flawlessly on mobile devices.
+Sticky Header: Header containing the site title and navigation should stick to the top on scroll.
+Mobile Navigation: Implement a "hamburger" menu for mobile that toggles a vertical list of navigation links (Day 1-7, Info). Menu should close when a link is clicked.
+"Back to Top" Button: A floating button, appearing on scroll, to smoothly return to the top of the page.
+Interactive Map Integration:
+For each day, if possible, embed a small interactive map (e.g., Leaflet.js, OpenStreetMap, or a simple Google Maps embed if preferred) showing markers for the key locations mentioned (accommodation, main attractions, restaurants).
+Clicking a marker could show the name of the place.
+"Current Day" Highlight in Navigation: As the user scrolls, the corresponding day link in the main navigation (both desktop and mobile) should be highlighted.
+Print-Friendly Version: Include a print stylesheet that optimises the page for printing (e.g., hides navigation, banner, sidebar, footer; ensures text is black and backgrounds are white).
+Smooth Scrolling: Anchor links to different day sections should scroll smoothly.
+Image Handling:
+Ability to easily update placeholder images with actual image URLs.
+Consider lazy loading for images to improve initial page load performance.
+Dynamic Content (Optional but preferred):
+Structure the itinerary data in a way that's easy to update (e.g., from a JSON file or a simple data structure within the JavaScript), rather than hardcoding all text directly into the HTML markup extensively. This would make future edits easier.
+Technology Stack Preference (if any, otherwise suggest best fit):
+
+HTML5, CSS3 (Tailwind CSS is acceptable and was used in the prototype, but ensure custom styles can be easily integrated and override where necessary for the specific aesthetic).
+Vanilla JavaScript for interactivity is preferred for simplicity, but a lightweight framework (like Vue.js or Svelte) is acceptable if it significantly aids in implementing features like map integration or dynamic content rendering. Avoid overly complex setups.
+Deliverables:
+
+A link to the working Replit project.
+Separate files for HTML, CSS, and JavaScript if not a framework that components them differently.
+Content (Provide the full itinerary text here or as an attached file/document):
+
+[Insert the full Poland Itinerary text that we've been working with]
+Tips for using this prompt with Replit's AI (or any similar AI coding assistant):
+
+Iterative Process: You'll likely need to guide the AI. Start with the basic structure and a couple of features, then ask it to add more.
+Be Specific: If something isn't right, tell it exactly what's wrong and how you'd like it changed (e.g., "The font size for the day headings is still too large on mobile; please reduce it to 2rem on screens smaller than 640px").
+Provide CSS Snippets: If you have specific CSS from your existing site that you want to be replicated exactly, provide those snippets.
+Break Down Complex Features: For something like map integration, you might need to prompt it in stages: "First, set up a basic Leaflet map. Next, add a marker for the accommodation on Day 1."
+This prompt is quite comprehensive, which should give the AI a good starting point. Good luck!
+Okay, here's a detailed prompt you can use for Replit's AI to build a more modern web app for your Poland itinerary, incorporating the styling and functionality we've developed, plus some new features.
+
+The key is to be as specific as possible. Provide the existing HTML/CSS/JS as context if Replit allows for that (e.g., by pasting it in or referencing files if you've already uploaded them to a Replit project).
+
+Replit AI Prompt: Poland Itinerary Web App
+Project Goal:
+Create a single-page, mobile-first responsive web application to display a 7-day travel itinerary for a trip to Poland (Kraków and Wrocław). The app should be visually appealing, easy to navigate (especially on mobile), and incorporate some interactive features.
+
+Core Content (Itinerary Details):
+
+The app will display a 7-day itinerary. Each day includes:
+A main heading (e.g., "Day 1")
+A subheading (e.g., "Arrival in Kraków & Speakeasy Charm")
+The date.
+A series of timed events, activities, and suggestions for meals (breakfast, lunch, dinner) and drinks.
+For each suggested restaurant/bar/major attraction, include:
+Name (hyperlinked to a Google search for that venue, e.g., https://www.google.com/search?q=VENUE+NAME+CITY).
+Brief "Why it fits you" description.
+"Ambiance" description.
+"Recommended Dish" or "Signature Cocktails" with example prices in PLN and GBP.
+Opening hours and booking notes where available.
+Include placeholder images for each day or key activity (these will be replaced later, but ensure space and styling for them).
+A separate "Preparation & Key Info" section (sidebar on desktop, accessible on mobile) containing:
+Weather information for Poland in September.
+Packing essentials.
+General notes (accommodation details with links, train booking reminder).
+Key Design & Styling Requirements (Based on Existing):
+
+Fonts:
+Body Text: 'Merriweather', serif
+Main Titles (Site Title, "Day X"): 'Playfair Display', serif
+Sub-headers & Suggestion Box Titles: 'Playfair Display', serif (though suggestion box titles currently use 'Lato', let's make them 'Playfair Display' for consistency with other headers, or keep 'Lato' if it looks better for that specific context – AI can suggest).
+Navigation & Metadata: 'Lato', sans-serif
+Link to Google Fonts: <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+Colours:
+Background: White (#ffffff)
+Default Text: Dark Grey (#333333)
+Hyperlinks (Default State): Sienna Brown (#A0522D). Must be clearly distinct from body text.
+Hyperlinks (Hover State): Darker Saddle Brown (#8B4513) with an underline.
+Main Navigation Links (Header): More subdued grey (#555555), darker on hover (#000000).
+Suggestion Boxes: Light grey background (#fafafa), light grey border (#e5e7eb).
+Tip Boxes (Sidebar): Off-white background (#f8f7f2), light grey border.
+Option Boxes (Day 4 "Option A/B"): Left accent border in Sienna (#A0522D), slightly different background (#fdfbf7).
+Layout:
+Use Tailwind CSS for the primary layout framework (CDN: https://cdn.tailwindcss.com).
+Main content area and a sidebar (sidebar for "Preparation & Key Info"). On mobile, the sidebar content should be accessible, perhaps below the main content or via a link in the mobile menu.
+Day headings should be large and responsive (e.g., font-size: 2.25rem on mobile, scaling up to 3.5rem on desktop).
+Clear visual hierarchy with headings, subheadings, and paragraph text.
+Generous use of white space.
+Icons:
+Use emojis 🍽️ for Dinner suggestions and 🍸 for Cocktails/Drinks suggestions within their respective titles in the suggestion boxes.
+Functionality Requirements:
+
+Mobile-First Responsive Design: Must look and work excellently on mobile phones.
+Sticky Header: The main header (containing site title and navigation) should stick to the top of the screen on scroll for all screen sizes.
+Mobile "Hamburger" Navigation:
+On screens smaller than Tailwind's md breakpoint, the main day navigation should collapse into a hamburger menu.
+The hamburger button should toggle the visibility of a vertical mobile menu panel.
+Clicking a link in the mobile menu should navigate to the section and close the menu.
+"Back to Top" Button:
+A floating button (e.g., bottom-right) that appears after scrolling down a certain amount.
+Clicking it scrolls the page smoothly to the top.
+Styled to fit the theme (e.g., using the accent link colour #C47A3E or #A0522D for background).
+Active Day Link Highlighting (Scrollspy):
+As the user scrolls through the itinerary, the corresponding day link (and "Info" link for the prep section) in both desktop and mobile navigation should be visually highlighted (e.g., different background or text colour).
+Also highlight on click for immediate feedback.
+Print Stylesheet:
+Basic print-friendly CSS (@media print) that hides navigation, banner, sidebar, footer, back-to-top button, and optimizes text for printing (e.g., black text, no shadows).
+Embedded Maps (New Feature):
+For each day, if feasible, include a small, interactive embedded map (e.g., Google Maps iframe or Leaflet.js map).
+The map should ideally show pins for the key locations mentioned for that day (restaurants, attractions).
+If daily maps are too complex, a general map for Kraków and one for Wrocław showing all relevant points could be an alternative, placed at the beginning of their respective city sections.
+Links to Google Maps for individual venues should still be present as currently implemented (venue name linking to Google Search for the venue).
+Image Placeholders & Fallbacks:
+Use https://placehold.co/ for initial image placeholders, with an onerror fallback as currently implemented, e.g., onerror="this.onerror=null;this.src='https://placehold.co/1080x607/cccccc/333333?text=Image+Not+Found';"
+Smooth Scrolling: For all internal anchor links (#day1, #prep, etc.).
+Technology Stack:
+
+HTML5
+CSS3 (with Tailwind CSS via CDN)
+Vanilla JavaScript (for interactivity like mobile menu, back-to-top, scrollspy)
+No complex backend or database is required for this version; it's a static site displaying pre-defined itinerary content.
+Existing Code Context (If platform allows, provide the latest HTML/CSS/JS as a starting point or reference):
+
+[You would ideally paste your latest combined HTML with embedded CSS and JS here, or upload the files if Replit's AI interface supports it. For this prompt, assume the AI can infer structure from the detailed descriptions above if direct code input isn't feasible for the initial prompt.]
+Key HTML Structure: Header, main content area (with sections per day), sidebar, footer. Suggestion boxes for venues.
+Key CSS Selectors to Maintain (if possible): .day-heading, .day-subheading, .metadata, .suggestion-box, .tip-box-sidebar, .option-box, etc.
+Priorities:
+
+Accurate display of all itinerary content.
+Mobile-first responsiveness and usability (especially mobile navigation).
+Correct styling (fonts, colours, layout) as close to the existing design as possible.
+Implementation of the requested functionalities (sticky header, back-to-top, scrollspy, embedded maps).
+Deliverables:
+
+A single HTML file with embedded CSS and JavaScript, or separate HTML, CSS, and JS files if that's standard for the Replit AI's web app generation.
+The app should be viewable and functional in a modern web browser.
+Please ask clarifying questions if any part of this is unclear. Start by setting up the basic HTML structure and applying the core styling. Then, implement the JavaScript-driven functionalities. The embedded maps feature is highly desired.

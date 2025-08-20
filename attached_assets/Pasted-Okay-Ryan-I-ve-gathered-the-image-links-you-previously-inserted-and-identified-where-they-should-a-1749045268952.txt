@@ -1,0 +1,44 @@
+Okay, Ryan, I've gathered the image links you previously inserted and identified where they should appear in the website layout.
+
+Here's the list:
+
+Main Banner Image (Kraków Main Square):
+
+URL: https://th.bing.com/th/id/R.c5faf32a80d29a8cca76d0cd036ae9a1?rik=c6ZVtZG0uinWpA&pid=ImgRaw&r=0
+Placement: This image is used as the main banner at the top of the page, below the header and above the main content grid.
+Current HTML <img> tag alt text: "Banner image of Kraków Main Square"
+Day 1 Image (Kraków Night Street):
+
+URL: https://primetourskrakow.com/wp-content/uploads/2020/07/DOMINIK-NIGHT.jpg
+Placement: Within the Day 1 section, after the details for "Mercy Brown" cocktails.
+Current HTML <img> tag alt text: "Kraków street at night"
+Day 2 Image (Wawel Castle Courtyard):
+
+URL: https://s.inyourpocket.com/gallery/299657.jpg
+Placement: Within the Day 2 section, after the details for "Schindler's Factory tour" and before the "Starka Restaurant" dinner suggestion.
+Current HTML <img> tag alt text: "Wawel Castle Courtyard"
+Day 3 Image (Wieliczka Salt Mine Chapel):
+
+URL: https://i.redd.it/qnlga60nz3o41.jpg
+Placement: Within the Day 3 section, after the details for the "Wieliczka Salt Mine tour" and before the "Mleczarnia" lunch suggestion.
+Current HTML <img> tag alt text: "Wieliczka Salt Mine Chapel"
+Day 4 Image (Auschwitz / Nowa Huta context):
+
+URL: https://cdn.britannica.com/35/147835-050-F63661FC/entrance-gates-concentration-camp-Auschwitz-Krakow-Poland.jpg
+Placement: Within the Day 4 section. You originally had this image after the "Option A: Nowa Huta" details and before the "Option B: Auschwitz-Birkenau" details. Given the image content (Auschwitz gates), it's more visually relevant to Option B. The alt text was "Nowa Huta architecture". You might want to place it directly within or after the "Option B" description, or choose a different image if you want one specifically for Nowa Huta.
+Current HTML <img> tag alt text: "Nowa Huta architecture" (Consider changing if placed with Option B).
+Day 5 Image (Ostrów Tumski at Dusk):
+
+URL: https://thumbs.dreamstime.com/b/cathedral-island-ostrow-tumski-wroclaw-poland-view-odra-river-beautiful-sunset-190137790.jpg
+Placement: Within the Day 5 section, after the description of "Ostrów Tumski (Cathedral Island) at dusk" and before the "Bernard Pub & Restaurant" dinner suggestion.
+Current HTML <img> tag alt text: "Ostrów Tumski at dusk"
+Day 6 Image (Nadodrze Street Art):
+
+URL: https://isba.me/wp-content/uploads/2023/04/Murale-Nadodrze-18.jpg
+Placement: Within the Day 6 section, after the description for the "Street art tour in Nadodrze" and before the "Centennial Hall" details.
+Current HTML <img> tag alt text: "Nadodrze street art"
+Day 7 Image (Wrocław Gnome):
+
+URL: https://api.culture.pl/sites/default/files/styles/1920_auto/public/2019-05/krasnale_wroclaw_fot_mieczyslaw_michalak_ag_img_9183.jpg?itok=FYB8Ytg8
+Placement: Within the Day 7 section, after the description for the "Gnome photo trail" and before the "Campo Modern Grill" lunch suggestion.
+Current HTML <img> tag alt text: "Wrocław Gnome"
