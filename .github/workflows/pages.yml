@@ -1,0 +1,42 @@
+name: Deploy to GitHub Pages (docs folder)
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install deps
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Publish to docs/
+        run: |
+          rm -rf docs
+          mkdir -p docs
+          cp -r dist/* docs/
+          touch docs/.nojekyll
+
+      - name: Commit docs folder
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs
+          git commit -m "Publish static build to docs" || echo "No changes"
+          git push
